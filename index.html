@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Microsite</title>
+    <link rel="shortcut icon" href="https://www.titan.co.in/favicon.png" type="image/x-icon">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Nav Bar Start -->
+        <nav>
+            <div class="side_bar">
+                <div class="menu">
+                    <div class="title">
+                        <div class="logo">
+                            <img src="TITAN logo.svg" alt="TitanLogo">
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                    <div class="bar-container">
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                    </div>
+                </div>
+                <!-- For mobile -->
+                <ul class="mobile">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Nav Bar Ends -->
+
+
+        <!-- Section Start -->
+        <section class="flex flex-column">
+            <div class="carousal-1">
+                <div class="carousal-slide1 fade">
+                    <div>
+                        <img src="./images/TD_LBbb_280523.gif" alt="">
+                    </div>
+                </div>
+                <div class="carousal-slide1 fade">
+                    <div>
+                        <img src="./images/TD_Smartfest_280523.avif" alt="">
+                    </div>
+                </div>
+                <div class="carousal-slide1 fade">
+                    <div>
+                        <img src="./images/TD_bestsellers_130423.avif" alt="">
+                    </div>
+                </div>
+                <div class="carousal-slide1 fade">
+                    <div>
+                        <img src="./images/TD_newarrivals_080523.avif" alt="">
+                    </div>
+                </div>
+
+                <a class="prev_1 change-slide" onclick="slideCountHandler2(-1)">❮</a>
+                <a class="next_1 change-slide" onclick="slideCountHandler2(1)">❯</a>
+            </div>
+            <div class="upper-show flex-row flex">
+                <div class="watch">
+                    <img src="./images/767x695_Premiumwatches.webp" alt="">
+                </div>
+                <div class="watch-multi flex flex-column">
+                    <div class="single-watch flex">
+                        <img src="./images/clock.webp" alt="">
+                        <p>Transform your home with</p>
+                        <span class="flex-column">
+                            <img src="TITAN logo.svg" alt="">
+                        </span>
+                    </div>
+                    <div  class="single-watch flex">
+                        <img src="./images/38082PP09_1.webp" alt="">
+                        <p>Keep you classy with</p>
+                        <span>
+                            <img src="TITAN logo.svg" alt="">
+                        </span>
+
+                    </div>
+                    <div class="single-watch flex">
+                        <img src="./images/38086PP04_1.webp" alt="">
+                        <p>Gift a Titan Smile with</p>
+                        <span class="flex-column">
+                            <img src="TITAN logo.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-pic flex-row flex">
+                <div class="watchdocs">
+                    <h2>Smartwatches</h2>
+                    <p>To experience the best of online shopping, you must shop from the right place. And when it comes to buying smartwatches, Titan can be your next favourite online destination. Browse through the latest smartwatch collection online and get special offers. From Titan's Connected X Collection to TraQ and Fastrack wearables, you can find the perfect match in just a few clicks. With the growing popularity of smartwatches, the fashion-forward crowd is pairing it up with all kinds of outfits. Be it formal, casual, ethnic or even beachwear. You never have to limit your sense of style!</p>
+                    <button>Know More</button>
+                </div>
+                <div class="watch">
+                    <img src="./images/img88PP05.png" alt="">
+                </div>
+            </div>
+            <div class="video flex">
+                <video src="./TitanWatchVideo.mp4" controls autoplay playsinline></video>
+            </div>
+            <!-- Form -->
+            <div class="form-container flex flex-column">
+                <div>
+                    <h3 class="">Connect Us</h3>
+                    <!-- Message -->
+                    <span class="message-box"></span>
+                    <form class="form">
+                        <input class="formfield name" type="text" name="name" placeholder="Enter your name">
+                        <input class="formfield email" type="email" name="email" placeholder="Enter your email address">
+                        <input class="formfield subject" type="text" name="subject" placeholder="Enter your subject">
+                        <textarea class="formfield formfield-textarea message" rows="10" cols="30" placeholder="Enter your message"></textarea>
+                        <div class="btn-container">
+                            <button type="reset" class="btn-reset">
+                                Reset<span></span>
+                            </button>
+                            <button type="submit" class="btn-submit" id="btn-submit">Send Massage
+                                <span></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Carousal bottom -->
+            <div class="carousal-2 my-2">
+                <div class="carousal-slide2 fade">
+                    <div>
+                        <img src="./images/38077AL06_1.webp" alt="">
+                        <p>Neo Splash Blue Dial Stainless Steel Strap Watch</p>
+                        <span>₹ 2999</span>
+                    </div>
+                    <div>
+                        <img src="./images/38086PP05_1.webp" alt="">
+                        <p>Titan Talk S with 1.78" AMOLED Display</p>
+                        <span>₹ 3599</span>
+                    </div>
+                    <div>
+                        <img src="./images/38086PP04_1.webp" alt="">
+                        <p>Touch Screen Watch with Black Strap</p>
+                        <span>₹ 4999</span>
+                    </div>
+                </div>
+                <div class="carousal-slide2 fade">
+                    <div>
+                        <img src="./images/38082PP09_1.webp" alt="">
+                        <p>Contemporary White Wall Clock</p>
+                        <span>₹ 6995</span>
+                    </div>
+                    <div>
+                        <img src="./images/38077AL06_1.webp" alt="">
+                        <p>Contemporary Rose Gold Metallic</p>
+                        <span>₹ 7589</span>
+                    </div>
+                    <div>
+                        <img src="./images/38077AM05_1.webp" alt="">
+                        <p>Neo Splash Black Dial Stainless Steel Strap</p>
+                        <span>₹ 5999</span>
+                    </div>
+                </div>
+                <div class="carousal-slide2 fade">
+                    <div>
+                        <img src="./images/90165AP01_1.webp" alt="">
+                        <p>Contemporary White Wall Clock</p>
+                        <span>₹ 1667</span>
+                    </div>
+                    <div>
+                        <img src="./images/90156AP04_1.webp" alt="">
+                        <p>Titan Smart- Touch Screen Watch</p>
+                        <span>₹ 2227</span>
+                    </div>
+                    <div>
+                        <img src="./images/90156AP03_1.webp" alt="">
+                        <p>Workwear Watch with Black Dial, Metal Strap</p>
+                        <span>₹ 8995</span>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <a class="prev change-slide" onclick="slideCountHandler(-1)">❮</a>
+                <a class="next change-slide" onclick="slideCountHandler(1)">❯</a>
+            </div>
+            <div class="down-img flex flex-row">
+                <div class="watch">
+                    <img src="./images/col-maritime.avif" alt="">
+                </div>
+                <div class="watch">
+                    <img src="./images/Edge-ceramic.avif" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Section End -->
+
+        <!-- Load More -->
+        <div style="text-align: center; margin-bottom: 1rem; ">
+            <a href="https://www.titan.co.in/" target="_blank" style="text-decoration: none;">Load More</a>
+        </div>
+
+
+        <!-- Footer Start -->
+        <footer>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About Titan</li>
+                    <li>Contact Us</li>
+                    <li>Policies</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- custom js -->
+    <script src = "script.js"></script>
+</body>
+</html>
