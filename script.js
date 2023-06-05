@@ -7,36 +7,9 @@ barContainer.addEventListener("click", function() {
   } else {
     mobile.style.cssText = "display: block !important";
   }
-})
+});
 
-//  Carousal2
-let index = 1;
-changeSlide(index);
-
-function slideCountHandler(count) {
-  changeSlide(index += count);
-}
-
-function currentSlide(count) {
-  changeSlide(index = count);
-}
-
-function changeSlide(count) {
-  let i;
-  let slides = document.getElementsByClassName("carousal-slide2");
-  if (count > slides.length) {index = 1}    
-  if (count < 1) {index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slides[index-1].style.display = "flex";
-}
-
-setInterval(function() {
-    slideCountHandler(1)
-    slideCountHandler2(1)
-}, 4000);
-
+// Carausal 1
 
 let index2 = 1;
 changeSlide2(index2);
@@ -60,6 +33,10 @@ function changeSlide2(count) {
   slides[index2-1].style.display = "flex";
 }
 
+setInterval(function() {
+    slideCountHandler2(1)
+}, 4000);
+
 
 // Form
 let form = document.querySelector('.form');
@@ -80,5 +57,30 @@ form.addEventListener("submit", function(e) {
     messageBox.innerHTML = "Submitted Successfully!!  ";
     messageBox.classList = 'success';
     messageBox.classList.remove = 'error';
+  }
+});
+
+// Carausal 2
+
+const swiper = new Swiper('.slide-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  loop: true,
+  autoplay: {
+    delay:4000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    900: {
+      slidesPerView: 3
+    }
   }
 });
