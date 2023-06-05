@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan Microsite</title>
     <link rel="shortcut icon" href="https://www.titan.co.in/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- custom css -->
     <link rel = "stylesheet" href = "style.css">
 </head>
@@ -137,63 +138,93 @@
                 </div>
             </div>
 
-            <!-- Carousal bottom -->
-            <div class="carousal-2 my-2">
-                <div class="carousal-slide2 fade">
-                    <div>
+            <!-- Carousal 2-->
+            <div class="container-carousal swiper">
+                <div class="slide-container">
+                  <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                      <div class="image-box">
                         <img src="./images/38077AL06_1.webp" alt="">
-                        <p>Neo Splash Blue Dial Stainless Steel Strap Watch</p>
-                        <span>₹ 2999</span>
+                      </div>
+                      <div class="details">
+                        <div class="desc-price">
+                          <h3 class="desc">Neo Splash Blue Dial</h3>
+                          <h4 class="price">₹ 8995</h4>
+                        </div>
+                      </div>
                     </div>
-                    <div>
+                    <div class="card swiper-slide">
+                      <div class="image-box">
                         <img src="./images/38086PP05_1.webp" alt="">
-                        <p>Titan Talk S with 1.78" AMOLED Display</p>
-                        <span>₹ 3599</span>
+                      </div>
+                      <div class="details">
+                        <div class="desc-price">
+                          <h3 class="desc">Workwear Watch</h3>
+                          <h4 class="price">₹ 1667</h4>
+                        </div>
+                      </div>
                     </div>
-                    <div>
+                    <div class="card swiper-slide">
+                      <div class="image-box">
                         <img src="./images/38086PP04_1.webp" alt="">
-                        <p>Touch Screen Watch with Black Strap</p>
-                        <span>₹ 4999</span>
+                      </div>
+                      <div class="details">
+                        <div class="desc-price">
+                          <h3 class="desc">Great From Titan</h3>
+                          <h4 class="price">₹ 5999</h4>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="carousal-slide2 fade">
-                    <div>
+                    <div class="card swiper-slide">
+                      <div class="image-box">
                         <img src="./images/38082PP09_1.webp" alt="">
-                        <p>Contemporary White Wall Clock</p>
-                        <span>₹ 6995</span>
+                      </div>
+                      <div class="details">
+                        <div class="desc-price">
+                          <h3 class="desc">Titan Smart- Touch Screen</h3>
+                          <h4 class="price">₹ 7589</h4>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                        <img src="./images/38077AL06_1.webp" alt="">
-                        <p>Contemporary Rose Gold Metallic</p>
-                        <span>₹ 7589</span>
-                    </div>
-                    <div>
+                    <div class="card swiper-slide">
+                      <div class="image-box">
                         <img src="./images/38077AM05_1.webp" alt="">
-                        <p>Neo Splash Black Dial Stainless Steel Strap</p>
-                        <span>₹ 5999</span>
+                      </div>
+                      <div class="details">
+                        <div class="desc-price">
+                          <h3 class="desc">Contemporary Rose Gold</h3>
+                          <h4 class="price">₹ 6995</h4>
+                        </div>
+                      </div>
                     </div>
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                          <img src="./images/90165AP01_1.webp" alt="">
+                        </div>
+                        <div class="details">
+                          <div class="desc-price">
+                            <h3 class="desc">Contemporary White Watch</h3>
+                            <h4 class="price">₹ 4999</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="image-box">
+                          <img src="./images/90156AP04_1.webp" alt="">
+                        </div>
+                        <div class="details">
+                          <div class="desc-price">
+                            <h3 class="desc">Touch Screen Watch</h3>
+                            <h4 class="price">₹ 2227</h4>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                 </div>
-                <div class="carousal-slide2 fade">
-                    <div>
-                        <img src="./images/90165AP01_1.webp" alt="">
-                        <p>Contemporary White Wall Clock</p>
-                        <span>₹ 1667</span>
-                    </div>
-                    <div>
-                        <img src="./images/90156AP04_1.webp" alt="">
-                        <p>Titan Smart- Touch Screen Watch</p>
-                        <span>₹ 2227</span>
-                    </div>
-                    <div>
-                        <img src="./images/90156AP03_1.webp" alt="">
-                        <p>Workwear Watch with Black Dial, Metal Strap</p>
-                        <span>₹ 8995</span>
-                    </div>
-                </div>
-                <!-- Buttons -->
-                <a class="prev change-slide" onclick="slideCountHandler(-1)">❮</a>
-                <a class="next change-slide" onclick="slideCountHandler(1)">❯</a>
-            </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             <div class="down-img flex flex-row">
                 <div class="watch">
                     <img src="./images/col-maritime.avif" alt="">
@@ -225,6 +256,7 @@
     </div>
 
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- custom js -->
     <script src = "script.js"></script>
 </body>
